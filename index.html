@@ -6,26 +6,206 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BJS basic template</title>
     <script src="scripts/model3d.js"></script>
+	<style>
+		body {
+		 background: black;
+		 //text-align: center;
+		 width: 100%;
+		 margin: 0;
+		 padding: 0px;
+		 
+		}
+		article {
+			
+		}
+		section {
+			
+		}
+		video {
+			visibility: hidden;
+			float: left;
+			position: absolute;
+			
+			width: 740px;
+			height: 415px;
+			//left: -370px;
+		}
+		.videoBox {
+			//float: left;
+			position: relative;
+			top: 100px;
+			//border: 1px solid brown;
+			width: 720px;
+		}
+		
+		.videoON {
+			visibility: visible;
+			float: left;
+			position: absolute;
+		}
+		.diamante {
+			//border: 1px solid black;
+			background-image: url('img/diamante0.png');
+			background-size: 20px 20px;
+			width: 20px;
+			height: 20px;
+			display: inline-block;
+			z-index: 10;
+		}
+		.V {
+			position: relative;
+			left: 324px;
+			width: 40px;
+			height: 40px;
+			background-size: 40px 40px;
+		}
+		.V:hover {
+			background-image: url('img/diamante0S.png');
+		}
+		.S {
+			background-image: url('img/dS.png');
+		}
+		.S:hover {
+			background-image: url('img/dSS.png');
+		}
+	</style>
 </head>
-<body>
-
-	<!-- 3d mode teste --
-    <model-3d background-color="#ffffff" src="https://drive.google.com/file/d/1JMzMCdoT0FdfPxVU2WQS5uhou2GcPc02/view?usp=sharing"></model-3d>
-	<!-- -->
+<body onload="">
+<article>
+	<section>
+	<div class="diamante V" onclick="playVideo(1)" onmouseover="" onmouseout="" id="d40"> </div>
+	<br>
+	<div class="diamante S" onclick="" onmouseover="playVideo(2)"  onmouseout="" id="d2"> </div>
+	<div class="diamante S" onclick="" onmouseover="playVideo(3)"  onmouseout="" id="d3"> </div>
+	<div class="diamante S" onclick="" onmouseover="playVideo(4)"  onmouseout="" id="d4"> </div>
+	<div class="diamante S" onclick="" onmouseover="playVideo(5)"  onmouseout="" id="d5"> </div>
+	<div class="diamante S" onclick="" onmouseover="playVideo(6)"  onmouseout="" id="d6"> </div>
+	<div class="diamante S" onclick="" onmouseover="playVideo(7)"  onmouseout="" id="d7"> </div>
+	<div class="diamante S" onclick="" onmouseover="playVideo(8)"  onmouseout="" id="d8"> </div>
+	<div class="diamante S" onclick="" onmouseover="playVideo(9)"  onmouseout="" id="d9"> </div>
+	<div class="diamante S" onclick="" onmouseover="playVideo(10)" onmouseout="" id="d10"> </div>
+	<div class="diamante S" onclick="" onmouseover="playVideo(11)" onmouseout="" id="d11"> </div>
+	<div class="diamante S" onclick="" onmouseover="playVideo(12)" onmouseout="" id="d12"> </div>
+	<div class="diamante S" onclick="" onmouseover="playVideo(13)" onmouseout="" id="d13"> </div>
+	<div class="diamante S" onclick="" onmouseover="playVideo(14)" onmouseout="" id="d14"> </div>
+	<div class="diamante S" onclick="" onmouseover="playVideo(15)" onmouseout="" id="d15"> </div>
+	<div class="diamante S" onclick="" onmouseover="playVideo(16)" onmouseout="" id="d16"> </div>
+	<div class="diamante S" onclick="" onmouseover="playVideo(17)" onmouseout="" id="d17"> </div>
+	<div class="diamante S" onclick="" onmouseover="playVideo(18)" onmouseout="" id="d18"> </div>
+	<div class="diamante S" onclick="" onmouseover="playVideo(19)" onmouseout="" id="d19"> </div>
+	<div class="diamante S" onclick="" onmouseover="playVideo(20)" onmouseout="" id="d20"> </div>
+	<div class="diamante S" onclick="" onmouseover="playVideo(21)" onmouseout="" id="d21"> </div>
+	<div class="diamante S" onclick="" onmouseover="playVideo(22)" onmouseout="" id="d22"> </div>
+	<div class="diamante S" onclick="" onmouseover="playVideo(23)" onmouseout="" id="d23"> </div>
+	<div class="diamante S" onclick="" onmouseover="playVideo(24)" onmouseout="" id="d24"> </div>
+	<div class="diamante S" onclick="" onmouseover="playVideo(25)" onmouseout="" id="d25"> </div>
+	<div class="diamante S" onclick="" onmouseover="playVideo(26)" onmouseout="" id="d26"> </div>
+	<div class="diamante S" onclick="" onmouseover="playVideo(27)" onmouseout="" id="d27"> </div>
+	<div class="diamante S" onclick="" onmouseover="playVideo(28)" onmouseout="" id="d28"> </div>
+	<div class="diamante S" onclick="" onmouseover="playVideo(29)" onmouseout="" id="d29"> </div>
+	</section>
 	
-	<!-- video final -->
 
-	<video autoplay style="width:560px; height:315px">
-	  <source src="videos/video-diamante.mp4?autoplay=1" type="video/mp4"  >
-	  <source src="movie.ogg" type="video/ogg">
-	  Your browser does not support the video tag.
-	</video>
-	
-	<div onclick="document.querySelector('video').play();" > teste
+	<div class="videoBox">
+	<!-- videos -->
+		<video id="1"  autoplay loop><source src="videos/001.mp4?autoplay=1" type="video/mp4"  >Your browser does not support the video tag.</video>
+		<video id="2"  autoplay loop><source src="videos/002.mp4?autoplay=1" type="video/mp4"  >Your browser does not support the video tag.</video>
+		<video id="3"  autoplay loop><source src="videos/003.mp4?autoplay=1" type="video/mp4"  >Your browser does not support the video tag.</video>
+		<video id="4"  autoplay loop><source src="videos/004.mp4?autoplay=1" type="video/mp4"  >Your browser does not support the video tag.</video>
+		<video id="5"  autoplay loop><source src="videos/005.mp4?autoplay=1" type="video/mp4"  >Your browser does not support the video tag.</video>
+		<video id="6"  autoplay loop><source src="videos/006.mp4?autoplay=1" type="video/mp4"  >Your browser does not support the video tag.</video>
+		<video id="7"  autoplay loop><source src="videos/007.mp4?autoplay=1" type="video/mp4"  >Your browser does not support the video tag.</video>
+		<video id="8"  autoplay loop><source src="videos/008.mp4?autoplay=1" type="video/mp4"  >Your browser does not support the video tag.</video>
+		<video id="9"  autoplay loop><source src="videos/009.mp4?autoplay=1" type="video/mp4"  >Your browser does not support the video tag.</video>
+		<video id="10" autoplay loop><source src="videos/010.mp4?autoplay=1" type="video/mp4"  >Your browser does not support the video tag.</video>
+		<video id="11" autoplay loop><source src="videos/011.mp4?autoplay=1" type="video/mp4"  >Your browser does not support the video tag.</video>
+		<video id="12" autoplay loop><source src="videos/012.mp4?autoplay=1" type="video/mp4"  >Your browser does not support the video tag.</video>
+		<video id="13" autoplay loop><source src="videos/013.mp4?autoplay=1" type="video/mp4"  >Your browser does not support the video tag.</video>
+		<video id="14" autoplay loop><source src="videos/014.mp4?autoplay=1" type="video/mp4"  >Your browser does not support the video tag.</video>
+		<video id="15" autoplay loop><source src="videos/015.mp4?autoplay=1" type="video/mp4"  >Your browser does not support the video tag.</video>
+		<video id="16" autoplay loop><source src="videos/016.mp4?autoplay=1" type="video/mp4"  >Your browser does not support the video tag.</video>
+		<video id="17" autoplay loop><source src="videos/017.mp4?autoplay=1" type="video/mp4"  >Your browser does not support the video tag.</video>
+		<video id="18" autoplay loop><source src="videos/018.mp4?autoplay=1" type="video/mp4"  >Your browser does not support the video tag.</video>
+		<video id="19" autoplay loop><source src="videos/019.mp4?autoplay=1" type="video/mp4"  >Your browser does not support the video tag.</video>
+		<video id="20" autoplay loop><source src="videos/020.mp4?autoplay=1" type="video/mp4"  >Your browser does not support the video tag.</video>
+		<video id="21" autoplay loop><source src="videos/021.mp4?autoplay=1" type="video/mp4"  >Your browser does not support the video tag.</video>
+		<video id="22" autoplay loop><source src="videos/022.mp4?autoplay=1" type="video/mp4"  >Your browser does not support the video tag.</video>
+		<video id="23" autoplay loop><source src="videos/023.mp4?autoplay=1" type="video/mp4"  >Your browser does not support the video tag.</video>
 	</div>
 	
 	<script>
-		document.querySelector('video').play();
+		function debug() {
+			stopVideo();
+		}
+		
+		function place() {
+		
+			//alert("instrucoes");
+			var diam = document.getElementsByClassName('diamante');
+			for(i=1; i<diam.length; i++) {
+				var rand = Math.random()*1.0+0.5;
+				var size = 0.5+i*0.05;
+				diam[i].style.webkitTransform = 'scale('+size+')'; 
+				diam[i].style.msTransform     = 'scale('+size+')'; 
+				diam[i].style.oTransform      = 'scale('+size+')'; 
+				diam[i].style.transform       = 'scale('+size+')';
+				diam[i].style.mozTransform    = 'scale('+size+')'; 
+			}
+		}
+		
+		function playVideo(id) {
+		
+			stopVideo(0);
+			
+			//document.querySelector('video').play();
+			if(id == 1) {
+				document.getElementById(1).className = "videoON";
+				document.getElementById(1).play();
+
+			}
+			else {
+				var r = Math.floor(Math.random() * 23) + 1;
+				var d = document.getElementById(r);
+				d.className = "videoON";
+				d.play();
+				
+				deg = Math.random()*360;
+				var size = 0.5+r*0.05;
+				
+				var diam = document.getElementById("d"+id);
+				diam.style.webkitTransform = 'rotate('+deg+'deg)'; 
+				diam.style.mozTransform    = 'rotate('+deg+'deg)'; 
+				diam.style.msTransform     = 'rotate('+deg+'deg)'; 
+				diam.style.oTransform      = 'rotate('+deg+'deg)'; 
+				diam.style.transform       = 'rotate('+deg+'deg)';
+			}
+			
+			//place();
+		}
+		
+		function stopVideo(id) {
+			
+			/*
+			document.getElementById(1).className = "videoOFF";
+			document.getElementById(1).pause();
+			document.getElementById(2).className = "videoOFF";
+			document.getElementById(2).pause();
+			document.getElementById(3).className = "videoOFF";
+			document.getElementById(3).pause();
+			document.getElementById(4).className = "videoOFF";
+			document.getElementById(4).pause();
+			document.getElementById(40).className = "videoOFF";
+			document.getElementById(40).pause();
+			*/
+			var videos = document.getElementsByTagName('video');
+			for(i=0; i<videos.length; i++) {
+				videos[i].className = "videoOFF";
+				videos[i].pause();
+			}
+		}
+		
+		//document.querySelector('video').play();
 	</script>
+</article>
 </body>
 </html>
